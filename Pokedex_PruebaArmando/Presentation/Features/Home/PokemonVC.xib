@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="Pokedex_PruebaArmando" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PokemonVC" customModule="Pokedex_PruebaArmando" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="iN0-l3-epB" id="zKx-YB-Qf2"/>
             </connections>
@@ -18,20 +18,25 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8se-PR-G7T">
-                    <rect key="frame" x="179" y="416" width="35" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pokémon" translatesAutoresizingMaskIntoConstraints="NO" id="gMJ-u3-CBN">
+                    <rect key="frame" x="16" y="59" width="361" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="6Rc-qs-2Ih"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gMJ-u3-CBN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="13C-wQ-jPx"/>
+                <constraint firstItem="gMJ-u3-CBN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="tVp-g0-Yj7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gMJ-u3-CBN" secondAttribute="trailing" constant="16" id="z5p-1q-ciA"/>
+            </constraints>
             <point key="canvasLocation" x="140" y="20"/>
         </view>
     </objects>
     <resources>
+        <image name="Pokémon" width="1920" height="1024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
