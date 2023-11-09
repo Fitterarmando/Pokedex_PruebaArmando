@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol PokemonRepository {
+    func getPokemon(id: Int, completion: @escaping (Result<PokemonModel, ApiError>) -> Void)
+}
